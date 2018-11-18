@@ -17,8 +17,10 @@
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
@@ -38,35 +40,22 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/open"
+                android:id="@+id/Label3"
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="32dp"
-                android:ems="10"
-                android:hint="@string/companyOpen"
-                android:inputType="textPersonName"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/followUnfollow" />
-
-            <TextView
-                android:id="@+id/fortyFiveDay"
-                android:layout_width="160dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
                 android:ems="10"
                 android:hint="45 Day Average"
                 android:inputType="textPersonName"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/shareVolume" />
+                app:layout_constraintTop_toBottomOf="@+id/Label2" />
 
             <TextView
-                android:id="@+id/beta"
-                android:layout_width="160dp"
-                android:layout_height="wrap_content"
+                android:id="@+id/fortyfivedayavg"
+                android:layout_width="171dp"
+                android:layout_height="25dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="8dp"
@@ -76,91 +65,202 @@
                 android:hint="Beta"
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/fortyFiveDay"
-                app:layout_constraintTop_toBottomOf="@+id/marketCap" />
+                app:layout_constraintStart_toEndOf="@+id/Label3"
+                app:layout_constraintTop_toBottomOf="@+id/shareVolume" />
 
             <TextView
-                android:id="@+id/sharesOutstanding"
-                android:layout_width="160dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="8dp"
-                android:ems="10"
-                android:hint="Shares Outstanding"
-                android:inputType="textPersonName"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/fortyFiveDay" />
-
-            <TextView
-                android:id="@+id/netIncome"
+                android:id="@+id/Label4"
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="4dp"
+                android:ems="10"
+                android:hint="Shares Outstanding"
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Label3" />
+
+            <TextView
+                android:id="@+id/sharesOutstanding"
+                android:layout_width="170dp"
+                android:layout_height="18dp"
+                android:layout_marginTop="4dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:ems="10"
                 android:hint="Last Net Income"
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/sharesOutstanding"
-                app:layout_constraintTop_toBottomOf="@+id/beta" />
+                app:layout_constraintTop_toBottomOf="@+id/fortyfivedayavg" />
 
             <TextView
-                android:id="@+id/sharesOutstanding2"
+                android:id="@+id/Label5"
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
                 android:ems="10"
                 android:hint="Shares Outstanding 2"
                 android:inputType="textPersonName"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/sharesOutstanding" />
+                app:layout_constraintTop_toBottomOf="@+id/Label4" />
 
             <TextView
-                android:id="@+id/earningPerShare"
+                android:id="@+id/Label6"
                 android:layout_width="160dp"
-                android:layout_height="45dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
                 android:ems="10"
                 android:hint="Earnings Per Share"
                 android:inputType="textPersonName"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/sharesOutstanding2" />
+                app:layout_constraintTop_toBottomOf="@+id/Label5" />
 
             <TextView
-                android:id="@+id/peRatio"
-                android:layout_width="160dp"
-                android:layout_height="45dp"
+                android:id="@+id/fiftyTwoWeekHigh"
+                android:layout_width="168dp"
+                android:layout_height="19dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="4dp"
                 android:layout_marginEnd="3dp"
                 android:layout_marginRight="3dp"
                 android:ems="10"
                 android:hint="P/E Ratio"
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/earningPerShare"
-                app:layout_constraintTop_toBottomOf="@+id/closingShare" />
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/Label6"
+                app:layout_constraintTop_toBottomOf="@+id/eps" />
 
             <TextView
-                android:id="@+id/fiftyTwoWeekHigh"
-                android:layout_width="160dp"
-                android:layout_height="45dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="8dp"
+                android:id="@+id/Label7"
+                android:layout_width="162dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
                 android:ems="10"
                 android:hint="52 Week High"
                 android:inputType="textPersonName"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/earningPerShare" />
+                app:layout_constraintTop_toBottomOf="@+id/Label6" />
+
+            <TextView
+                android:id="@+id/Label8"
+                android:layout_width="162dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="28dp"
+                android:ems="10"
+                android:hint="previous close"
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Label6"
+                tools:text="Previous Close" />
+
+            <TextView
+                android:id="@+id/Label9"
+                android:layout_width="162dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="56dp"
+                android:ems="10"
+                android:hint="52 Week High"
+                android:inputType="textPersonName"
+                android:text="Daily Low"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Label6" />
+
+            <TextView
+                android:id="@+id/Label10"
+                android:layout_width="162dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="80dp"
+                android:ems="10"
+                android:hint="52 Week High"
+                android:inputType="textPersonName"
+                android:text="Market Cap"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Label6" />
+
+            <TextView
+                android:id="@+id/Label11"
+                android:layout_width="162dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="112dp"
+                android:ems="10"
+                android:hint="52 Week High"
+                android:inputType="textPersonName"
+                android:text="Beta"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Label6" />
+
+            <TextView
+                android:id="@+id/Label12"
+                android:layout_width="162dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="140dp"
+                android:ems="10"
+                android:hint="52 Week High"
+                android:inputType="textPersonName"
+                android:text="Last Net Income"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Label6" />
+
+            <TextView
+                android:id="@+id/Label13"
+                android:layout_width="162dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="168dp"
+                android:ems="10"
+                android:hint="52 Week High"
+                android:inputType="textPersonName"
+                android:text="Closing Share"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Label6" />
+
+            <TextView
+                android:id="@+id/Label14"
+                android:layout_width="162dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="196dp"
+                android:ems="10"
+                android:hint="52 Week High"
+                android:inputType="textPersonName"
+                android:text="P/E Ratio"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Label6" />
+
+            <TextView
+                android:id="@+id/Label15"
+                android:layout_width="162dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="224dp"
+                android:ems="10"
+                android:hint="52 Week High"
+                android:inputType="textPersonName"
+                android:text="52 Week Low"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Label6" />
 
             <TextView
                 android:id="@+id/predictedROI"
@@ -215,27 +315,144 @@
                 android:layout_height="45dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="328dp"
                 android:ems="10"
                 android:hint="Input Shares"
                 android:inputType="textPersonName"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/fiftyTwoWeekHigh" />
+                app:layout_constraintTop_toBottomOf="@+id/Label7" />
 
             <TextView
-                android:id="@+id/fiftyTwoWeekLow"
-                android:layout_width="160dp"
-                android:layout_height="45dp"
+                android:id="@+id/previousClose"
+                android:layout_width="169dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:ems="10"
+                android:hint="52 Week Low"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/Label7" />
+
+            <TextView
+                android:id="@+id/dailyLow"
+                android:layout_width="166dp"
+                android:layout_height="20dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
+                android:layout_marginTop="68dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:ems="10"
                 android:hint="52 Week Low"
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/fiftyTwoWeekHigh"
-                app:layout_constraintTop_toTopOf="@+id/fiftyTwoWeekHigh" />
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/Label7"
+                app:layout_constraintTop_toTopOf="@+id/Label7" />
+
+            <TextView
+                android:id="@+id/marketCap"
+                android:layout_width="166dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="92dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:ems="10"
+                android:hint="52 Week Low"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/Label7"
+                app:layout_constraintTop_toTopOf="@+id/Label7" />
+
+            <TextView
+                android:id="@+id/beta"
+                android:layout_width="166dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="112dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:ems="10"
+                android:hint="52 Week Low"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/Label7"
+                app:layout_constraintTop_toTopOf="@+id/Label7" />
+
+            <TextView
+                android:id="@+id/lastNetIncome"
+                android:layout_width="166dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="132dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:ems="10"
+                android:hint="52 Week Low"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/Label7"
+                app:layout_constraintTop_toTopOf="@+id/Label7" />
+
+            <TextView
+                android:id="@+id/closingShare"
+                android:layout_width="166dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="156dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:ems="10"
+                android:hint="52 Week Low"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/Label7"
+                app:layout_constraintTop_toTopOf="@+id/Label7" />
+
+            <TextView
+                android:id="@+id/peRatio"
+                android:layout_width="166dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="180dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:ems="10"
+                android:hint="52 Week Low"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/Label7"
+                app:layout_constraintTop_toTopOf="@+id/Label7" />
+
+            <TextView
+                android:id="@+id/fiftyTwoWeekLow"
+                android:layout_width="166dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="208dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:ems="10"
+                android:hint="52 Week Low"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/Label7"
+                app:layout_constraintTop_toTopOf="@+id/Label7" />
 
             <TextView
                 android:id="@+id/predictedShareValue"
@@ -254,9 +471,26 @@
                 app:layout_constraintTop_toBottomOf="@+id/timeUnit" />
 
             <TextView
-                android:id="@+id/closingShare"
-                android:layout_width="160dp"
-                android:layout_height="wrap_content"
+                android:id="@+id/eps"
+                android:layout_width="169dp"
+                android:layout_height="23dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:ems="10"
+                android:hint="Closing Share"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/Label5"
+                app:layout_constraintTop_toBottomOf="@+id/sharesOutstanding" />
+
+            <TextView
+                android:id="@+id/sharesOutstanding2"
+                android:layout_width="169dp"
+                android:layout_height="27dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="8dp"
@@ -266,26 +500,26 @@
                 android:hint="Closing Share"
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/sharesOutstanding2"
-                app:layout_constraintTop_toBottomOf="@+id/netIncome" />
+                app:layout_constraintStart_toEndOf="@+id/Label5"
+                app:layout_constraintTop_toBottomOf="@+id/sharesOutstanding" />
 
             <TextView
-                android:id="@+id/shareVolume"
+                android:id="@+id/Label2"
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:hint="Share Volume"
                 android:inputType="textPersonName"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/dailyHigh" />
+                app:layout_constraintTop_toBottomOf="@+id/Label1" />
 
             <TextView
-                android:id="@+id/marketCap"
-                android:layout_width="160dp"
-                android:layout_height="wrap_content"
+                android:id="@+id/shareVolume"
+                android:layout_width="169dp"
+                android:layout_height="20dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="8dp"
@@ -295,50 +529,57 @@
                 android:hint="Market Cap"
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/shareVolume"
-                app:layout_constraintTop_toBottomOf="@+id/dailyLow" />
+                app:layout_constraintStart_toEndOf="@+id/Label2"
+                app:layout_constraintTop_toBottomOf="@+id/dailyHigh" />
 
             <TextView
-                android:id="@+id/dailyHigh"
-                android:layout_width="160dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="8dp"
+                android:id="@+id/Label1"
+                android:layout_width="166dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
                 android:ems="10"
                 android:hint="Daily High"
                 android:inputType="textPersonName"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/open" />
+                app:layout_constraintTop_toBottomOf="@+id/Label0" />
 
             <TextView
-                android:id="@+id/dailyLow"
-                android:layout_width="160dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:id="@+id/dailyHigh"
+                android:layout_width="167dp"
+                android:layout_height="21dp"
                 android:ems="10"
                 android:hint="Daily Low"
                 android:inputType="textPersonName"
-                app:layout_constraintEnd_toEndOf="@+id/previousClose"
-                app:layout_constraintStart_toStartOf="@+id/previousClose"
-                app:layout_constraintTop_toBottomOf="@+id/previousClose" />
+                tools:layout_editor_absoluteX="180dp"
+                tools:layout_editor_absoluteY="195dp" />
 
             <TextView
-                android:id="@+id/previousClose"
-                android:layout_width="160dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginBottom="8dp"
+                android:id="@+id/open"
+                android:layout_width="168dp"
+                android:layout_height="23dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
                 android:ems="10"
                 android:hint="Previous Close"
                 android:inputType="textPersonName"
-                app:layout_constraintBottom_toBottomOf="@+id/open"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/open"
-                app:layout_constraintTop_toTopOf="@+id/open" />
+                tools:layout_editor_absoluteY="170dp" />
+
+            <TextView
+                android:id="@+id/Label0"
+                android:layout_width="168dp"
+                android:layout_height="23dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="Previous Close"
+                android:inputType="textPersonName"
+                android:text="Open"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/followUnfollow" />
 
             <TextView
                 android:id="@+id/lastUpdated"
@@ -460,8 +701,10 @@
                 android:layout_marginRight="8dp"
                 app:layout_constraintBottom_toBottomOf="@id/inputShares"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.516"
                 app:layout_constraintStart_toEndOf="@+id/inputShares"
-                app:layout_constraintTop_toBottomOf="@+id/fiftyTwoWeekLow" />
+                app:layout_constraintTop_toBottomOf="@+id/previousClose"
+                app:layout_constraintVertical_bias="0.816" />
 
             <EditText
                 android:id="@+id/amtTime"
@@ -491,7 +734,7 @@
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:text="Calculate"
-                app:layout_constraintEnd_toEndOf="@+id/fiftyTwoWeekLow"
+                app:layout_constraintEnd_toEndOf="@+id/previousClose"
                 app:layout_constraintStart_toEndOf="@+id/timeUnit"
                 app:layout_constraintTop_toBottomOf="@+id/stockToggle" />
         </android.support.constraint.ConstraintLayout>

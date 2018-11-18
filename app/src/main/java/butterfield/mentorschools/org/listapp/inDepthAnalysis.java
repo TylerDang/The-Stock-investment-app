@@ -30,7 +30,7 @@ public class inDepthAnalysis extends AppCompatActivity {
 
         companyName = (TextView) findViewById(R.id.companyName);
         companyTicker = (TextView) findViewById(R.id.companyTicker);
-        Open = (TextView) findViewById(R.id.open);
+        Open = (TextView) findViewById(R.id.Label0);
         followUnfollow = (Button) findViewById(R.id.followUnfollow);
 
         new fetchData().execute("http://13.59.22.125/" + tickerInput);
